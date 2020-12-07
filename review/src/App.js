@@ -8,6 +8,9 @@ const initialState = {currentValue: 0};
 let currentState = reducer(initialState, {type:"ADD", payload: 5});
 console.log(currentState);
 
+currentState = reducer(currentState, {type:"SUBTRACT", payload: 2});
+console.log(currentState);
+
 
 export default function App() {
   return (
