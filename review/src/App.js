@@ -3,12 +3,18 @@ import reducer from './reducers/calcReducer';
 import "./styles.css";
 
 
-const initialState = {currentValue: 0};
+const initialState = {
+  currentValue: 0,
+  memory: 0
+};
 
 let currentState = reducer(initialState, {type:"ADD", payload: 5});
 console.log(currentState);
 
 currentState = reducer(currentState, {type:"SUBTRACT", payload: 2});
+console.log(currentState);
+
+currentState = reducer(currentState, {type:"ADD", payload: 2});
 console.log(currentState);
 
 
