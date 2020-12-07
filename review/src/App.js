@@ -3,7 +3,9 @@ import reducer from './reducers/calcReducer';
 import "./styles.css";
 
 
-const currentState = reducer({currentValue: 0}, {type:"ADD", payload: 5});
+const initialState = {currentValue: 0};
+
+let currentState = reducer(initialState, {type:"ADD", payload: 5});
 console.log(currentState);
 
 
