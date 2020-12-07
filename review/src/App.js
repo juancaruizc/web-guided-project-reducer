@@ -3,7 +3,7 @@ import reducer from './reducers/calcReducer';
 import "./styles.css";
 
 
-const currentState = reducer({currentState: 0}, {type:"ADD", payload: 5});
+const currentState = reducer({currentValue: 0}, {type:"ADD", payload: 5});
 console.log(currentState);
 
 
